@@ -6,6 +6,7 @@ function preload() {
 }
 function setup() {
   createCanvas(windowWidth, windowHeight); // Adjust canvas size as needed
+  fill(255, 0, 0);
   textAlign(CENTER, CENTER);
       textSize(60); 
   textAlign(CENTER, CENTER); 
@@ -13,7 +14,8 @@ function setup() {
 
 }
 function draw() {
-    image(img, 0, 0, img.width, img.height);
+    
+  image(img, 0, 0, img.width, img.height);
    var x = constrain(mouseX, 0, img.width - 1);
     var y = constrain(mouseY, 0, img.height - 1);
      var zoom = img.get(x, y, 100, 100);
